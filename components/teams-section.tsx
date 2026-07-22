@@ -6,7 +6,7 @@ import { teams, type Team, type Player } from '@/lib/data'
 import { TeamBadge } from '@/components/team-badge'
 import { SectionHeading } from '@/components/section-heading'
 
-const POSITION_ORDER: Player['position'][] = ['Portero', 'Cierre', 'Ala', 'Pívot']
+const POSITION_ORDER: Player['position'][] = ['Portero', 'Cierre', 'Ala', 'Pívot', '']
 
 export function TeamsSection() {
   const [selectedTeam, setSelectedTeam] = useState<Team | null>(null)
@@ -77,6 +77,7 @@ export function TeamsSection() {
 
               <div className="space-y-6">
                 {POSITION_ORDER.map((pos) => {
+                  console.log(pos)
                   const posPlayers = selectedTeam.players?.filter((p) => p.position === pos) || []
                   if (posPlayers.length === 0) return null
                   return (

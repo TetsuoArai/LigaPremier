@@ -46,12 +46,9 @@ export function LiveMatches() {
                   <TeamBadge short={home?.short ?? '??'} logo={home?.logo} color={home?.color ?? '#fff'} size="xl" />
                   <span className="text-sm font-semibold leading-tight">{m.home}</span>
                 </div>
-
                 <div className="flex flex-col items-center px-4">
                   <div className="font-display text-4xl font-bold tracking-tight">
-                    {m.homeScore}
-                    <span className="mx-2 text-muted-foreground">:</span>
-                    {m.awayScore}
+                    VS
                   </div>
                 </div>
 
