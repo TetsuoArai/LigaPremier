@@ -34,7 +34,7 @@ export function Standings() {
                 <span
                   className={cn(
                     'flex h-7 w-7 items-center justify-center rounded-lg font-display text-xs font-bold',
-                    pos <= 4 ? 'bg-primary/15 text-primary' : pos >= sorted.length - 1 ? 'bg-destructive/15 text-destructive' : 'text-muted-foreground',
+                    pos <= 2 ? 'bg-primary/15 text-primary' : 'text-muted-foreground',
                   )}
                 >
                   {pos}
@@ -87,10 +87,7 @@ export function Standings() {
 
       <div className="mt-4 flex flex-wrap gap-4 text-xs text-muted-foreground">
         <span className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded bg-primary" /> Zona de clasificación
-        </span>
-        <span className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded bg-destructive" /> Zona de descenso
+          <span className="h-2.5 w-2.5 rounded bg-primary" /> Zona de clasificación (Primeros 2)
         </span>
       </div>
     </section>

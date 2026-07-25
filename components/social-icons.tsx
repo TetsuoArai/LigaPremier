@@ -19,10 +19,10 @@ export function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
   )
 }
 
-export function FacebookIcon(props: SVGProps<SVGSVGElement>) {
+export function KickIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M3.46 2H8v3.46H5.77v2.3H8V11.23H5.77v2.3H8V17H5.77v2.3H8V22H3.46v-3.46h2.3v-2.3H3.46V11.23h2.3v-2.3H3.46V5.46h2.3V2zm7.4 0h4.54v3.46h-2.3v5.77h2.3v5.77H13.1v5.77h-2.24V2zm6.9 0h4.54v3.46h-2.3v11.54h2.3V22H17.76V2z"/>
     </svg>
   )
 }

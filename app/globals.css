@@ -151,3 +151,39 @@
   background-size: 60px 60px;
   animation: grid-move 12s linear infinite;
 }
+
+/* Efecto de texto repetido reluciente de fondo detrás de los elementos */
+body {
+  position: relative;
+  background-color: var(--background);
+}
+
+@keyframes shine-text {
+  0%, 100% {
+    opacity: 0.02;
+    text-shadow: 0 0 10px transparent;
+  }
+  50% {
+    opacity: 0.05;
+    text-shadow: 0 0 20px var(--primary);
+  }
+}
+
+@keyframes twinkle-float {
+  0% {
+    opacity: 0.15;
+    transform: translateY(0px) scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-50px) scale(1.2);
+  }
+  100% {
+    opacity: 0.15;
+    transform: translateY(-100px) scale(0.8);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle-float linear infinite;
+}

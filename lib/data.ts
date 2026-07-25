@@ -95,6 +95,8 @@ export const teams: Team[] = [
       { id: "l22", number: 13, name: "Daniel Rodríguez", position: "" },
       { id: "l23", number: 14, name: "Manuel Valdez", position: "" },
       { id: "l24", number: 15, name: "Douglas Rojas", position: "" },
+      { id: "l25", number: 16, name: "Greison Dayeth", position: "" },
+      { id: "l26", number: 17, name: "Gregory Fermín", position: "" },
     ],
   },
   {
@@ -113,21 +115,24 @@ export const teams: Team[] = [
     points: 0,
     coach: "Héctor Jiménez",
     players: [
-      {
-        id: "j1",
-        number: 1,
-        name: "Pedro Guzmán",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "j2", number: 22, name: "Tomás Silva", position: "" },
-      { id: "j3", number: 4, name: "Gonzalo Ramos", position: "" },
-      { id: "j4", number: 5, name: "Ignacio Navarro", position: "" },
-      { id: "j5", number: 7, name: "Sebastián Delgado", position: "" },
-      { id: "j6", number: 10, name: "Felipe Romero", position: "" },
-      { id: "j7", number: 17, name: "Lucas Benítez", position: "" },
-      { id: "j8", number: 9, name: "Rodrigo Flores", position: "" },
-      { id: "j9", number: 15, name: "Matías Acosta", position: "" },
+      { id: "ja1", number: 1, name: "Ismael", position: "" },
+      { id: "ja2", number: 2, name: "Julio Fuentes", position: "" },
+      { id: "ja3", number: 3, name: "John", position: "", isCaptain: true },
+      { id: "ja4", number: 4, name: "Jolon", position: "" },
+      { id: "ja5", number: 5, name: "Robert Rodríguez", position: "" },
+      { id: "ja6", number: 6, name: "Kendry", position: "" },
+      { id: "ja7", number: 7, name: "Doraemon", position: "" },
+      { id: "ja8", number: 8, name: "Junior Dicent", position: "" },
+      { id: "ja9", number: 9, name: "Daniel Feng", position: "" },
+      { id: "ja10", number: 10, name: "Francisco", position: "" },
+      { id: "ja11", number: 11, name: "Lebron", position: "" },
+      { id: "ja12", number: 12, name: "Jorge Ramírez", position: "" },
+      { id: "ja13", number: 13, name: "Evan", position: "" },
+      { id: "ja14", number: 14, name: "Payano", position: "" },
+      { id: "ja15", number: 15, name: "Novita", position: "" },
+      { id: "ja16", number: 16, name: "Chichi", position: "" },
+      { id: "ja17", number: 17, name: "Pitri", position: "" },
+      { id: "ja18", number: 18, name: "Darien", position: "" },
     ],
   },
   {
@@ -135,7 +140,7 @@ export const teams: Team[] = [
     name: "Joseo FC B",
     short: "JOSB",
     color: "#3fb8ff",
-    group: "A",
+    group: "B",
     logo: "/logos/Joseo.png",
     played: 0,
     won: 0,
@@ -146,21 +151,24 @@ export const teams: Team[] = [
     points: 0,
     coach: "Héctor Jiménez",
     players: [
-      {
-        id: "j1",
-        number: 1,
-        name: "Pedro Guzmán",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "j2", number: 22, name: "Tomás Silva", position: "" },
-      { id: "j3", number: 4, name: "Gonzalo Ramos", position: "" },
-      { id: "j4", number: 5, name: "Ignacio Navarro", position: "" },
-      { id: "j5", number: 7, name: "Sebastián Delgado", position: "" },
-      { id: "j6", number: 10, name: "Felipe Romero", position: "" },
-      { id: "j7", number: 17, name: "Lucas Benítez", position: "" },
-      { id: "j8", number: 9, name: "Rodrigo Flores", position: "" },
-      { id: "j9", number: 15, name: "Matías Acosta", position: "" },
+      { id: "jb1", number: 1, name: "Jabes", position: "" },
+      { id: "jb2", number: 2, name: "Gean Marco", position: "" },
+      { id: "jb3", number: 3, name: "Esteban", position: "", isCaptain: true },
+      { id: "jb4", number: 4, name: "Yves", position: "" },
+      { id: "jb5", number: 5, name: "Zironi", position: "" },
+      { id: "jb6", number: 6, name: "Nicolás Cuadra", position: "" },
+      { id: "jb7", number: 7, name: "Alexander Domínguez", position: "" },
+      { id: "jb8", number: 8, name: "Ricardo Elías", position: "" },
+      { id: "jb9", number: 9, name: "Alan Montero", position: "" },
+      { id: "jb10", number: 10, name: "Carlos Liriano", position: "" },
+      { id: "jb11", number: 11, name: "Patico", position: "" },
+      { id: "jb12", number: 12, name: "Reynoso", position: "" },
+      { id: "jb13", number: 13, name: 'Darling "Jumbo"', position: "" },
+      { id: "jb14", number: 14, name: "Oscar Avellino", position: "" },
+      { id: "jb15", number: 15, name: "Rafael Fradera", position: "" },
+      { id: "jb16", number: 16, name: "Dembele", position: "" },
+      { id: "jb17", number: 17, name: "Benjamin", position: "" },
+      { id: "jb18", number: 18, name: "Yury", position: "" },
     ],
   },
   {
@@ -177,23 +185,27 @@ export const teams: Team[] = [
     gf: 0,
     ga: 0,
     points: 0,
-    coach: "Gabriel Núñez",
+    coach: "Enrique Cascante",
     players: [
-      { id: "s1", number: 1, name: "Esteban Molina", position: "" },
-      { id: "s2", number: 12, name: "David Suárez", position: "" },
-      {
-        id: "s3",
-        number: 2,
-        name: "Joaquín Cabrera",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "s4", number: 6, name: "Martín Paredes", position: "" },
-      { id: "s5", number: 8, name: "Nicolás Rios", position: "" },
-      { id: "s6", number: 10, name: "Alejandro Vega", position: "" },
-      { id: "s7", number: 11, name: "Emilio Fuentes", position: "" },
-      { id: "s8", number: 9, name: "Bruno Valenzuela", position: "" },
-      { id: "s9", number: 19, name: "Santino Bravo", position: "" },
+      { id: "s1", number: 1, name: "Gabriel Martínez", position: "" },
+      { id: "s2", number: 2, name: "Alberto González Hernández", position: "" },
+      { id: "s3", number: 3, name: "Gonzalo Aponte", position: "" },
+      { id: "s4", number: 4, name: "Axel alma", position: "" },
+      { id: "s5", number: 5, name: "Jesús Morillo", position: "" },
+      { id: "s6", number: 6, name: "Jonathan González", position: "" },
+      { id: "s7", number: 7, name: "Omar Domínguez", position: "" },
+      { id: "s8", number: 8, name: "Gabriel Brugal", position: "" },
+      { id: "s9", number: 9, name: "Abraham Rivera", position: "" },
+      { id: "s10", number: 10, name: "Alvin Rivera", position: "" },
+      { id: "s11", number: 11, name: "Jeffry Pierre", position: "" },
+      { id: "s12", number: 12, name: "Miguel Anton Encarnación", position: "" },
+      { id: "s13", number: 13, name: "Luis Daniel Caminero", position: "" },
+      { id: "s14", number: 14, name: "Emilio López", position: "" },
+      { id: "s15", number: 15, name: "Aiser Ramirez", position: "" },
+      { id: "s16", number: 16, name: "Armando Lora", position: "" },
+      { id: "s17", number: 17, name: "Óscar Guillen", position: "" },
+      { id: "s18", number: 18, name: "Diego Muñoz", position: "" },
+      { id: "s19", number: 19, name: "Luis Pérez", position: "" },
     ],
   },
   {
@@ -229,6 +241,9 @@ export const teams: Team[] = [
       { id: "a10", number: 12, name: "George Bonnelly Soriano", position: "" },
       { id: "a11", number: 13, name: "Moisés Crespo", position: "" },
       { id: "a12", number: 14, name: "Enmanuel De la Cruz", position: "" },
+      { id: "a13", number: 15, name: "Ramon Enrique Capellán Lerebours", position: "" },
+      { id: "a14", number: 16, name: "Jeremy Acosta", position: "" },
+      { id: "a15", number: 17, name: "Angel Hiciano Joga", position: "" },
     ],
   },
   {
@@ -283,23 +298,23 @@ export const teams: Team[] = [
     gf: 0,
     ga: 0,
     points: 0,
-    coach: "Dario Méndez",
+    coach: "Juan Machado",
     players: [
-      { id: "u1", number: 1, name: "Agustín Cordero", position: "" },
-      { id: "u2", number: 25, name: "Facundo Lira", position: "" },
-      {
-        id: "u3",
-        number: 4,
-        name: "Mauricio Bustos",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "u4", number: 6, name: "Luciano Salinas", position: "" },
-      { id: "u5", number: 7, name: "Jerónimo Vera", position: "" },
-      { id: "u6", number: 10, name: "Bautista Corvalán", position: "" },
-      { id: "u7", number: 11, name: "Valentín Santillán", position: "" },
-      { id: "u8", number: 9, name: "Iván Leguizamón", position: "" },
-      { id: "u9", number: 18, name: "Thiago Farias", position: "" },
+      { id: "u1", number: 1, name: "Juan Zambrano", position: "" },
+      { id: "u2", number: 2, name: "Newman Baptista", position: "" },
+      { id: "u3", number: 3, name: "Beiker Lozano", position: "" },
+      { id: "u4", number: 4, name: "Martin Lopez", position: "" },
+      { id: "u5", number: 5, name: "Sayner Rivas", position: "" },
+      { id: "u6", number: 6, name: "Julio César Gavarrete", position: "" },
+      { id: "u7", number: 7, name: "Victor Gaspar", position: "" },
+      { id: "u8", number: 8, name: "Eliot De León", position: "" },
+      { id: "u9", number: 9, name: "Anderson Kun", position: "" },
+      { id: "u10", number: 10, name: "Alexis Padilla", position: "" },
+      { id: "u11", number: 11, name: "Flobert Eugene", position: "" },
+      { id: "u12", number: 12, name: "Andrés Castellanos", position: "" },
+      { id: "u13", number: 13, name: "Josué Lorenzo", position: "" },
+      { id: "u14", number: 14, name: "Pelé", position: "" },
+      { id: "u15", number: 15, name: "Daniel Pérez", position: "" },
     ],
   },
   {
@@ -316,7 +331,7 @@ export const teams: Team[] = [
     gf: 0,
     ga: 0,
     points: 0,
-    coach: "Esteban Valenzuela",
+    coach: "Wandy Pierrez",
     players: [
       { id: "v1", number: 5, name: "Melvin Vallejo", position: "" },
       { id: "v2", number: 13, name: "Sergio Laguia", position: "" },
@@ -340,7 +355,7 @@ export const teams: Team[] = [
     name: "Búho FC",
     short: "BFC",
     color: "#ff8a3f",
-    group: "B",
+    group: "A",
     logo: "/logos/BuhoFC.png",
     played: 0,
     won: 0,
@@ -349,32 +364,37 @@ export const teams: Team[] = [
     gf: 0,
     ga: 0,
     points: 0,
-    coach: "Carlos Domínguez",
+    coach: "Pedro Dipp / Mera Darling / José Flores",
     players: [
-      { id: "b1", number: 1, name: "Álvaro Soria", position: "" },
-      { id: "b2", number: 13, name: "Sergio Villalba", position: "" },
-      {
-        id: "b3",
-        number: 3,
-        name: "Ezequiel Quiroga",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "b4", number: 6, name: "Milton Báez", position: "" },
-      { id: "b5", number: 7, name: "Axel Barrios", position: "" },
-      { id: "b6", number: 10, name: "n Cáceres", position: "" },
-      { id: "b7", number: 14, name: "Leonel Galeano", position: "" },
-      { id: "b8", number: 9, name: "Elias Insaurralde", position: "" },
-      { id: "b9", number: 22, name: "Tiziano Benítez", position: "" },
+      { id: "b1", number: 1, name: "Julio A Mejía Quezada", position: "" },
+      { id: "b2", number: 2, name: "Cristopher Ovalles", position: "" },
+      { id: "b3", number: 3, name: "Deyvis Leo Encarnacion", position: "" },
+      { id: "b4", number: 4, name: "mariano Alberto García sanquintin", position: "" },
+      { id: "b5", number: 5, name: "Marcos Antonio Marte Furment", position: "" },
+      { id: "b6", number: 6, name: "Angel Camilo Medina Fernández", position: "" },
+      { id: "b7", number: 7, name: "Eduardo Antonio Marte Furment", position: "" },
+      { id: "b8", number: 8, name: "Justin Steven Uceta Montero", position: "" },
+      { id: "b9", number: 9, name: "B. Camilo Torres H.", position: "" },
+      { id: "b10", number: 10, name: "Joan Ureña", position: "" },
+      { id: "b11", number: 11, name: "Ronny Almonte", position: "" },
+      { id: "b12", number: 12, name: "Aldrin Hernández", position: "" },
+      { id: "b13", number: 13, name: "dalton Hernández", position: "" },
+      { id: "b14", number: 14, name: "Luis Ricardo", position: "" },
+      { id: "b15", number: 15, name: "Cristian espinosa", position: "" },
+      { id: "b16", number: 16, name: "Félix Fonseca", position: "" },
+      { id: "b17", number: 17, name: "kelvin García", position: "" },
+      { id: "b18", number: 18, name: "Edin Jiménez", position: "" },
+      { id: "b19", number: 19, name: "Julián Cabreja", position: "" },
+      { id: "b20", number: 20, name: "Augustin", position: "" },
     ],
   },
   {
-    id: "ataraxia",
-    name: "Ataraxia FC",
-    short: "ATFC",
+    id: "mallixia",
+    name: "Mallixia FC",
+    short: "MFC",
     color: "#ff3fa4",
-    group: "A",
-    logo: "/logos/AtaraxiaFC.png",
+    group: "B",
+    logo: "/logos/AtaraxiaFC.png", // Using AtaraxiaFC.png or generic as logo
     played: 0,
     won: 0,
     drawn: 0,
@@ -382,31 +402,27 @@ export const teams: Team[] = [
     gf: 0,
     ga: 0,
     points: 0,
-    coach: "Oscar Almonte",
-    players: [
-      { id: "sp1", number: 1, name: "Samuel Pirela", position: "" },
-      { id: "sp2", number: 2, name: "Jose Molina", position: "" },
-      { id: "sp3", number: 3, name: "Cristian Omaña", position: "" },
-      { id: "sp4", number: 4, name: "Jesus Bermudez", position: "" },
-      { id: "sp5", number: 5, name: "Nelwin Araujo", position: "" },
-      { id: "sp6", number: 6, name: "Jose Miguel Mequita", position: "" },
-      {
-        id: "sp7",
-        number: 7,
-        name: "Yuangel Guerrero",
-        position: "",
-        isCaptain: true,
-      },
-      { id: "sp8", number: 8, name: "Arnaldo Granda", position: "" },
-      { id: "sp9", number: 9, name: "Anderson Ferrara", position: "" },
-      { id: "sp10", number: 10, name: "Rafael Ramirez", position: "" },
-      { id: "sp11", number: 11, name: "Ulises Cordoba", position: "" },
-      { id: "sp12", number: 12, name: "Decius Denis", position: "" },
-      { id: "sp13", number: 13, name: "Cristian Bacca", position: "" },
-      { id: "sp14", number: 14, name: "Ivan Prado", position: "" },
-      { id: "sp15", number: 15, name: "Victor Divardo", position: "" },
-    ],
+    coach: "",
+    players: [],
   },
+  {
+    id: "pelicula",
+    name: "Pelicula FC",
+    short: "PFC",
+    color: "#e2e8f0",
+    group: "A",
+    logo: "/logos/PeliculaFC.png",
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    gf: 0,
+    ga: 0,
+    points: 0,
+    coach: "",
+    players: [],
+  },
+
 ];
 
 export type Scorer = {
@@ -432,28 +448,77 @@ export type Match = {
   viewers?: string;
 };
 
-export const liveMatches: Match[] = [
-  {
-    id: "m1",
-    home: "Warriors FC",
-    away: "Lightning FC",
-    homeScore: 0,
-    awayScore: 0,
-    status: "upcoming",
-    date: "HOY",
-    time: "19:00",
-  },
-  {
-    id: "m2",
-    home: "Joseo FC A",
-    away: "Space FC",
-    homeScore: 0,
-    awayScore: 0,
-    status: "upcoming",
-    date: "HOY",
-    time: "20:30",
-  },
-];
+// Helper to parse date/time from calendar formats (e.g. "25 JUL", "17:00") into a JS Date object
+export function parseMatchDateTime(dateStr: string, timeStr: string): Date {
+  const currentYear = new Date().getFullYear();
+  // Example dateStr: "25 JUL" or "2 AGO"
+  const parts = dateStr.trim().split(" ");
+  const day = parseInt(parts[0], 10);
+  const monthStr = parts[1]?.toUpperCase() ?? "";
+
+  let month = 0; // JAN is 0
+  if (monthStr.startsWith("ENE")) month = 0;
+  else if (monthStr.startsWith("FEB")) month = 1;
+  else if (monthStr.startsWith("MAR")) month = 2;
+  else if (monthStr.startsWith("ABR")) month = 3;
+  else if (monthStr.startsWith("MAY")) month = 4;
+  else if (monthStr.startsWith("JUN")) month = 5;
+  else if (monthStr.startsWith("JUL")) month = 6;
+  else if (monthStr.startsWith("AGO")) month = 7;
+  else if (monthStr.startsWith("SEP")) month = 8;
+  else if (monthStr.startsWith("OCT")) month = 9;
+  else if (monthStr.startsWith("NOV")) month = 10;
+  else if (monthStr.startsWith("DIC")) month = 11;
+
+  // Example timeStr: "17:00" or "5:00 PM"
+  let hours = 0;
+  let minutes = 0;
+  const isPM = timeStr.toUpperCase().includes("PM");
+  const isAM = timeStr.toUpperCase().includes("AM");
+
+  // Strip PM/AM and split
+  const cleanTime = timeStr.replace(/(PM|AM)/gi, "").trim();
+  const timeParts = cleanTime.split(":");
+  hours = parseInt(timeParts[0], 10);
+  minutes = parseInt(timeParts[1], 10) || 0;
+
+  if (isPM && hours < 12) hours += 12;
+  if (isAM && hours === 12) hours = 0;
+
+  return new Date(currentYear, month, day, hours, minutes);
+}
+
+export function getActiveLiveMatches(): Match[] {
+  const now = new Date();
+
+  // Find matches that started less than 2 hours ago
+  return calendar
+    .filter(m => {
+      const matchTime = parseMatchDateTime(m.date, m.time);
+      const diffMs = now.getTime() - matchTime.getTime();
+      const diffHours = diffMs / (1000 * 60 * 60);
+      return diffHours >= 0 && diffHours < 2; // Active for 2 hours
+    })
+    .map(m => {
+      const matchTime = parseMatchDateTime(m.date, m.time);
+      const diffMs = now.getTime() - matchTime.getTime();
+      const currentMinute = Math.min(Math.floor(diffMs / (1000 * 60)), 90);
+
+      return {
+        id: m.id,
+        home: m.home,
+        away: m.away,
+        homeScore: 0,
+        awayScore: 0,
+        status: "live",
+        minute: `${currentMinute}'`,
+        date: "HOY",
+        time: m.time,
+        viewers: `${Math.floor(Math.random() * 800) + 150}`
+      };
+    });
+}
+
 
 export type CalendarMatch = {
   id: string;
@@ -465,76 +530,51 @@ export type CalendarMatch = {
   date: string;
   time: string;
   round: string;
+  group: string;
 };
 
 export const calendar: CalendarMatch[] = [
-  {
-    id: "c1",
-    home: "Alpha FC",
-    homeShort: "AFC",
-    away: "Sporting FC",
-    awayShort: "SPO",
-    day: "VIE",
-    date: "24 ENE",
-    time: "18:00",
-    round: "Jornada 1",
-  },
-  {
-    id: "c2",
-    home: "Unión CF",
-    homeShort: "UFC",
-    away: "Valpa FC",
-    awayShort: "VFC",
-    day: "VIE",
-    date: "24 ENE",
-    time: "20:00",
-    round: "Jornada 1",
-  },
-  {
-    id: "c3",
-    home: "Búho FC",
-    homeShort: "BFC",
-    away: "Joseo FC A",
-    awayShort: "JOS",
-    day: "SÁB",
-    date: "25 ENE",
-    time: "17:00",
-    round: "Jornada 1",
-  },
-  {
-    id: "c4",
-    home: "Warriors FC",
-    homeShort: "WFC",
-    away: "Joseo FC A",
-    awayShort: "JOS",
-    day: "SÁB",
-    date: "25 ENE",
-    time: "19:30",
-    round: "Jornada 1",
-  },
-  {
-    id: "c5",
-    home: "Lightning FC",
-    homeShort: "LFC",
-    away: "Space FC",
-    awayShort: "SFC",
-    day: "DOM",
-    date: "26 ENE",
-    time: "18:00",
-    round: "Jornada 1",
-  },
-  {
-    id: "c6",
-    home: "Sporting FC",
-    homeShort: "SPO",
-    away: "Valpa FC",
-    awayShort: "VFC",
-    day: "DOM",
-    date: "26 ENE",
-    time: "20:00",
-    round: "Jornada 1",
-  },
+  // ── Jornada 1 · Sábado 25 Jul 2026 ──────────────────────────────
+  { id: 'c1', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Alpha FC', awayShort: 'AFC', day: 'SÁB', date: '25 JUL', time: '17:00', round: 'Jornada 1', group: 'B' },
+  { id: 'c2', home: 'Lightning FC', homeShort: 'LFC', away: 'Búho FC', awayShort: 'BFC', day: 'SÁB', date: '25 JUL', time: '18:00', round: 'Jornada 1', group: 'A' },
+  { id: 'c3', home: 'Joseo FC B', homeShort: 'JOSB', away: 'Valpa FC', awayShort: 'VFC', day: 'SÁB', date: '25 JUL', time: '19:00', round: 'Jornada 1', group: 'B' },
+  { id: 'c4', home: 'Warriors RD FC', homeShort: 'WFC', away: 'Space FC', awayShort: 'SFC', day: 'SÁB', date: '25 JUL', time: '20:00', round: 'Jornada 1', group: 'A' },
+  { id: 'c5', home: 'Unión CF', homeShort: 'UFC', away: 'Mallixia FC', awayShort: 'MFC', day: 'SÁB', date: '25 JUL', time: '21:00', round: 'Jornada 1', group: 'B' },
+  { id: 'c6', home: 'Joseo FC A', homeShort: 'JOSA', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '25 JUL', time: '22:00', round: 'Jornada 1', group: 'A' },
+
+  // ── Jornada 2 · Domingo 2 Ago 2026 ──────────────────────────────
+  { id: 'c7', home: 'Lightning FC', homeShort: 'LFC', away: 'Space FC', awayShort: 'SFC', day: 'DOM', date: '2 AGO', time: '17:00', round: 'Jornada 2', group: 'A' },
+  { id: 'c8', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Valpa FC', awayShort: 'VFC', day: 'DOM', date: '2 AGO', time: '18:00', round: 'Jornada 2', group: 'B' },
+  { id: 'c9', home: 'Búho FC', homeShort: 'BFC', away: 'Joseo FC A', awayShort: 'JOSA', day: 'DOM', date: '2 AGO', time: '19:00', round: 'Jornada 2', group: 'A' },
+  { id: 'c10', home: 'Alpha FC', homeShort: 'AFC', away: 'Mallixia FC', awayShort: 'MFC', day: 'DOM', date: '2 AGO', time: '20:00', round: 'Jornada 2', group: 'B' },
+  { id: 'c11', home: 'Joseo FC B', homeShort: 'JOSB', away: 'Unión CF', awayShort: 'UFC', day: 'DOM', date: '2 AGO', time: '21:00', round: 'Jornada 2', group: 'B' },
+  { id: 'c12', home: 'Warriors RD FC', homeShort: 'WFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'DOM', date: '2 AGO', time: '22:00', round: 'Jornada 2', group: 'A' },
+
+  // ── Jornada 3 · Sábado 15 Ago 2026 ──────────────────────────────
+  { id: 'c13', home: 'Pelicula FC', homeShort: 'PFC', away: 'Búho FC', awayShort: 'BFC', day: 'SÁB', date: '15 AGO', time: '17:00', round: 'Jornada 3', group: 'A' },
+  { id: 'c14', home: 'Alpha FC', homeShort: 'AFC', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '15 AGO', time: '18:00', round: 'Jornada 3', group: 'B' },
+  { id: 'c15', home: 'Mallixia FC', homeShort: 'MFC', away: 'Valpa FC', awayShort: 'VFC', day: 'SÁB', date: '15 AGO', time: '19:00', round: 'Jornada 3', group: 'B' },
+  { id: 'c16', home: 'Joseo FC A', homeShort: 'JOSA', away: 'Space FC', awayShort: 'SFC', day: 'SÁB', date: '15 AGO', time: '20:00', round: 'Jornada 3', group: 'A' },
+  { id: 'c17', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '15 AGO', time: '21:00', round: 'Jornada 3', group: 'B' },
+  { id: 'c18', home: 'Warriors RD FC', homeShort: 'WFC', away: 'Lightning FC', awayShort: 'LFC', day: 'SÁB', date: '15 AGO', time: '22:00', round: 'Jornada 3', group: 'A' },
+
+  // ── Jornada 4 · Sábado 22 Ago 2026 ──────────────────────────────
+  { id: 'c19', home: 'Space FC', homeShort: 'SFC', away: 'Búho FC', awayShort: 'BFC', day: 'SÁB', date: '22 AGO', time: '17:00', round: 'Jornada 4', group: 'A' },
+  { id: 'c20', home: 'Valpa FC', homeShort: 'VFC', away: 'Alpha FC', awayShort: 'AFC', day: 'SÁB', date: '22 AGO', time: '18:00', round: 'Jornada 4', group: 'B' },
+  { id: 'c21', home: 'Pelicula FC', homeShort: 'PFC', away: 'Lightning FC', awayShort: 'LFC', day: 'SÁB', date: '22 AGO', time: '19:00', round: 'Jornada 4', group: 'A' },
+  { id: 'c22', home: 'Unión CF', homeShort: 'UFC', away: 'Sporting Claret SD', awayShort: 'SPO', day: 'SÁB', date: '22 AGO', time: '20:00', round: 'Jornada 4', group: 'B' },
+  { id: 'c23', home: 'Mallixia FC', homeShort: 'MFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '22 AGO', time: '21:00', round: 'Jornada 4', group: 'B' },
+  { id: 'c24', home: 'Joseo FC A', homeShort: 'JOSA', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '22 AGO', time: '22:00', round: 'Jornada 4', group: 'A' },
+
+  // ── Jornada 5 · Sábado 29 Ago 2026 ──────────────────────────────
+  { id: 'c25', home: 'Space FC', homeShort: 'SFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '29 AGO', time: '17:00', round: 'Jornada 5', group: 'A' },
+  { id: 'c26', home: 'Alpha FC', homeShort: 'AFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '29 AGO', time: '18:00', round: 'Jornada 5', group: 'B' },
+  { id: 'c27', home: 'Valpa FC', homeShort: 'VFC', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '29 AGO', time: '19:00', round: 'Jornada 5', group: 'B' },
+  { id: 'c28', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Mallixia FC', awayShort: 'MFC', day: 'SÁB', date: '29 AGO', time: '20:00', round: 'Jornada 5', group: 'B' },
+  { id: 'c29', home: 'Lightning FC', homeShort: 'LFC', away: 'Joseo FC A', awayShort: 'JOSA', day: 'SÁB', date: '29 AGO', time: '21:00', round: 'Jornada 5', group: 'A' },
+  { id: 'c30', home: 'Búho FC', homeShort: 'BFC', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '29 AGO', time: '22:00', round: 'Jornada 5', group: 'A' },
 ];
+
 
 export type InstagramPost = {
   id: string;
@@ -547,31 +587,17 @@ export type InstagramPost = {
 export const instagramPosts: InstagramPost[] = [
   {
     id: "ig1",
-    image: "/ig-1.png",
-    caption: "¡Todo listo para el inicio de la temporada! 🔥",
+    image: "/instagramPost/FaseDeGrupo.png",
+    caption: "🔥 ¡LLEGÓ EL MOMENTO: ASÍ QUEDAN DEFINIDOS LOS GRUPOS! 🔥",
     likes: "1,240",
     comments: "82",
   },
   {
     id: "ig2",
-    image: "/ig-2.png",
-    caption: "Presentación oficial de los equipos de la Liga Premier ⚽",
+    image: "/instagramPost/Calendario.png",
+    caption: "🔥 ¡LLEGÓ EL DÍA: ASÍ SE JUEGA LA JORNADA 1! 🔥",
     likes: "1,890",
     comments: "96",
-  },
-  {
-    id: "ig3",
-    image: "/ig-3.png",
-    caption: "Listos para darlo todo en la cancha 🧤",
-    likes: "2,510",
-    comments: "134",
-  },
-  {
-    id: "ig4",
-    image: "/ig-4.png",
-    caption: "Unidos por la gloria. #FutsalRD",
-    likes: "4,020",
-    comments: "221",
   },
 ];
 

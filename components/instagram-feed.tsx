@@ -10,10 +10,10 @@ export function InstagramFeed() {
         <SectionHeading
           eyebrow="Redes sociales"
           title="Lo último en Instagram"
-          description="Sigue cada jugada, gol y momento en @ligapremierfutsalrd."
+          description="Sigue cada jugada, gol y momento en @lpfdom."
         />
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/lpfdom?igsh=MWlvdmhlOGtydHkycA=="
           target="_blank"
           rel="noopener noreferrer"
           className="mb-10 inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:border-accent hover:text-accent"
@@ -27,7 +27,7 @@ export function InstagramFeed() {
         {instagramPosts.map((p) => (
           <a
             key={p.id}
-            href="https://instagram.com"
+            href="https://www.instagram.com/lpfdom?igsh=MWlvdmhlOGtydHkycA=="
             target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-3xl border border-border bg-card"

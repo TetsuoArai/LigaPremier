@@ -8,20 +8,32 @@ import { TeamsSection } from '@/components/teams-section'
 import { CalendarSection } from '@/components/calendar-section'
 import { InstagramFeed } from '@/components/instagram-feed'
 import { SiteFooter } from '@/components/site-footer'
+import { Preloader } from '@/components/preloader'
+import { LightningBackground } from '@/components/lightning-background'
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background">
+      <Preloader />
       <SiteHeader />
       <Hero />
       <GoalTicker />
-      <LiveMatches />
-      <GoalsSection />
-      <Standings />
-      <TeamsSection />
-      <CalendarSection />
-      <InstagramFeed />
+
+      {/* Body sections with floating stars background */}
+      <div className="relative overflow-hidden">
+        <LightningBackground />
+        <div className="relative z-10">
+          <LiveMatches />
+          <GoalsSection />
+          <Standings />
+          <TeamsSection />
+          <CalendarSection />
+          <InstagramFeed />
+        </div>
+      </div>
+
       <SiteFooter />
     </main>
   )
 }
+

@@ -1,16 +1,19 @@
 import { Radio } from 'lucide-react'
-import { InstagramIcon, YoutubeIcon, FacebookIcon } from '@/components/social-icons'
+import { InstagramIcon, KickIcon } from '@/components/social-icons'
 
 export function SiteFooter() {
+  const socialLinks = [
+    { Icon: InstagramIcon, href: "https://www.instagram.com/lpfdom?igsh=MWlvdmhlOGtydHkycA==" },
+    { Icon: KickIcon, href: "https://kick.com/ligapfd" }
+  ]
+
   return (
     <footer className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-4 py-14 md:px-8">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <Radio className="h-5 w-5" />
-              </span>
+              <img src="/LigaPremierFutsalDominicana.png" alt="Liga Premier Futsal Dominicana" className="h-9 w-auto transform scale-150 mr-2" />
               <span className="font-display text-sm font-bold leading-none tracking-tight">
                 LIGA PREMIER
                 <span className="block text-[10px] font-medium tracking-[0.25em] text-muted-foreground">
@@ -19,10 +22,12 @@ export function SiteFooter() {
               </span>
             </div>
             <div className="mt-5 flex gap-3">
-              {[InstagramIcon, YoutubeIcon, FacebookIcon].map((Icon, i) => (
+              {socialLinks.map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
                   aria-label="Red social"
                 >

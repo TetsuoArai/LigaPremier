@@ -47,7 +47,7 @@ export function CalendarSection() {
         })}
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {matches.map((m) => {
           const home = teamByShort(m.homeShort)
           const away = teamByShort(m.awayShort)
@@ -61,15 +61,15 @@ export function CalendarSection() {
                 <span className="font-display text-sm font-bold">{m.time}</span>
               </div>
 
-              <div className="flex flex-1 items-center justify-between gap-2">
-                <div className="flex flex-1 items-center gap-2">
-                  <TeamBadge short={m.homeShort} logo={home?.logo} color={home?.color ?? '#fff'} size="sm" />
-                  <span className="truncate text-sm font-semibold">{m.home}</span>
+              <div className="flex flex-1 items-center justify-between gap-4 min-w-0">
+                <div className="flex flex-1 items-center gap-4 min-w-0">
+                  <TeamBadge short={m.homeShort} logo={home?.logo} color={home?.color ?? '#fff'} size="sm" className="flex-shrink-0" />
+                  <span className="truncate text-sm font-semibold sm:text-base">{m.home}</span>
                 </div>
-                <span className="font-display text-xs font-bold text-muted-foreground">VS</span>
-                <div className="flex flex-1 items-center justify-end gap-2 text-right">
-                  <span className="truncate text-sm font-semibold">{m.away}</span>
-                  <TeamBadge short={m.awayShort} logo={away?.logo} color={away?.color ?? '#fff'} size="sm" />
+                <span className="font-display text-xs font-bold text-muted-foreground px-2">VS</span>
+                <div className="flex flex-1 items-center justify-end gap-4 text-right min-w-0">
+                  <span className="truncate text-sm font-semibold sm:text-base">{m.away}</span>
+                  <TeamBadge short={m.awayShort} logo={away?.logo} color={away?.color ?? '#fff'} size="sm" className="flex-shrink-0" />
                 </div>
               </div>
             </article>
