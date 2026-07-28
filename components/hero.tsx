@@ -27,6 +27,12 @@ export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
+    // Preload all slideshow images into browser memory cache for instant transitions
+    FOTO_GRUPAL_HERO_IMAGES.forEach((src) => {
+      const img = new Image()
+      img.src = src
+    })
+
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % FOTO_GRUPAL_HERO_IMAGES.length)
     }, 4000)
