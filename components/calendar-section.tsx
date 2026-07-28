@@ -12,20 +12,7 @@ function teamByShort(short: string) {
 }
 
 export function CalendarSection() {
-  const days = useMemo(() => {
-    const now = new Date()
-    const allDates = Array.from(new Set(calendar.map((c) => c.date)))
-    
-    // Filter dates where the match day has not completely passed
-    const upcomingDates = allDates.filter((dateStr) => {
-      const matchEndDate = parseMatchDateTime(dateStr, "23:59")
-      // Match day is active or in the future
-      return matchEndDate.getTime() >= now.getTime() - (24 * 60 * 60 * 1000)
-    })
-
-    return upcomingDates.length > 0 ? upcomingDates : allDates
-  }, [])
-
+  const days = useMemo(() => Array.from(new Set(calendar.map((c) => c.date))), [])
   const [active, setActive] = useState(days[0])
 
   const matches = calendar.filter((c) => c.date === active)

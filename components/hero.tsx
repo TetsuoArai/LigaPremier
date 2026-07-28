@@ -21,7 +21,6 @@ const FOTO_GRUPAL_HERO_IMAGES = [
 const stats = [
   { icon: Users, label: 'Equipos', value: '12' },
   { icon: Video, label: 'Partidos HD', value: '100%' },
-  { icon: Trophy, label: 'Bolsa Campeón', value: 'RD$80K' },
 ]
 
 export function Hero() {
@@ -86,7 +85,7 @@ export function Hero() {
             </a>
           </div>
 
-          <dl className="mt-12 grid max-w-md grid-cols-3 gap-4">
+          <dl className="mt-12 grid max-w-sm grid-cols-2 gap-4">
             {stats.map((s) => (
               <div key={s.label} className="rounded-2xl border border-border bg-card/50 p-4 backdrop-blur">
                 <s.icon className="h-5 w-5 text-primary" />
