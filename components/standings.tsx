@@ -9,19 +9,19 @@ export function Standings() {
   const groupB = sorted.filter((t) => t.group === 'B')
 
   const renderTable = (teams: typeof sorted) => (
-    <table className="w-full min-w-[640px] text-sm">
+    <table className="w-full min-w-[640px] text-base">
       <thead>
-        <tr className="border-b border-border text-xs uppercase tracking-wide text-muted-foreground">
-          <th className="px-4 py-4 text-left font-medium">#</th>
-          <th className="px-4 py-4 text-left font-medium">Equipo</th>
-          <th className="px-3 py-4 text-center font-medium">PJ</th>
-          <th className="px-3 py-4 text-center font-medium">G</th>
-          <th className="px-3 py-4 text-center font-medium">E</th>
-          <th className="px-3 py-4 text-center font-medium">P</th>
-          <th className="px-3 py-4 text-center font-medium">GF</th>
-          <th className="px-3 py-4 text-center font-medium">GC</th>
-          <th className="px-3 py-4 text-center font-medium">DIF</th>
-          <th className="px-4 py-4 text-center font-medium">PTS</th>
+        <tr className="border-b border-border text-sm font-bold uppercase tracking-wider text-muted-foreground bg-secondary/30">
+          <th className="px-4 py-4 text-left">#</th>
+          <th className="px-4 py-4 text-left">Equipo</th>
+          <th className="px-3.5 py-4 text-center">PJ</th>
+          <th className="px-3.5 py-4 text-center">G</th>
+          <th className="px-3.5 py-4 text-center">E</th>
+          <th className="px-3.5 py-4 text-center">P</th>
+          <th className="px-3.5 py-4 text-center">GF</th>
+          <th className="px-3.5 py-4 text-center">GC</th>
+          <th className="px-3.5 py-4 text-center">DIF</th>
+          <th className="px-5 py-4 text-center font-extrabold text-foreground">PTS</th>
         </tr>
       </thead>
       <tbody>
@@ -30,32 +30,32 @@ export function Standings() {
           const dif = t.gf - t.ga
           return (
             <tr key={t.id} className="group border-b border-border/60 transition-colors last:border-0 hover:bg-secondary/40">
-              <td className="px-4 py-3">
+              <td className="px-4 py-4">
                 <span
                   className={cn(
-                    'flex h-7 w-7 items-center justify-center rounded-lg font-display text-xs font-bold',
-                    pos <= 2 ? 'bg-primary/15 text-primary' : 'text-muted-foreground',
+                    'flex h-8 w-8 items-center justify-center rounded-xl font-display text-sm font-extrabold',
+                    pos <= 2 ? 'bg-primary/20 text-primary border border-primary/30' : 'text-muted-foreground',
                   )}
                 >
                   {pos}
                 </span>
               </td>
-              <td className="px-4 py-3">
+              <td className="px-4 py-4">
                 <div className="flex items-center gap-3">
                   <TeamBadge short={t.short} logo={t.logo} color={t.color} size="md" />
-                  <span className="font-semibold">{t.name}</span>
+                  <span className="font-bold text-base text-foreground">{t.name}</span>
                 </div>
               </td>
-              <td className="px-3 py-3 text-center text-muted-foreground">{t.played}</td>
-              <td className="px-3 py-3 text-center">{t.won}</td>
-              <td className="px-3 py-3 text-center">{t.drawn}</td>
-              <td className="px-3 py-3 text-center">{t.lost}</td>
-              <td className="px-3 py-3 text-center text-muted-foreground">{t.gf}</td>
-              <td className="px-3 py-3 text-center text-muted-foreground">{t.ga}</td>
-              <td className={cn('px-3 py-3 text-center', dif > 0 ? 'text-primary' : dif < 0 ? 'text-destructive' : '')}>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-foreground/90">{t.played}</td>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-emerald-400">{t.won}</td>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-amber-400">{t.drawn}</td>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-rose-400">{t.lost}</td>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-foreground/90">{t.gf}</td>
+              <td className="px-3.5 py-4 text-center font-bold text-base text-foreground/90">{t.ga}</td>
+              <td className={cn('px-3.5 py-4 text-center font-bold text-base', dif > 0 ? 'text-primary' : dif < 0 ? 'text-destructive' : 'text-muted-foreground')}>
                 {dif > 0 ? `+${dif}` : dif}
               </td>
-              <td className="px-4 py-3 text-center font-display text-base font-bold">{t.points}</td>
+              <td className="px-5 py-4 text-center font-display text-lg font-black text-primary">{t.points}</td>
             </tr>
           )
         })}

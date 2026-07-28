@@ -16,41 +16,65 @@ export function LiveMatches() {
   useEffect(() => {
     const updateMatches = () => {
       const now = new Date()
-      // We will show the first 2 matches from the calendar.
-      // If a match's scheduled time is active (now is between matchTime and matchTime + 2 hours), we mark it as "live".
-      // Otherwise, it is "upcoming".
-      const firstMatches = calendar.slice(0, 2).map((m) => {
-        const matchTime = parseMatchDateTime(m.date, m.time)
-        const diffMs = now.getTime() - matchTime.getTime()
-        const diffHours = diffMs / (1000 * 60 * 60)
-        const isLive = diffHours >= 0 && diffHours < 2
 
-        let status: 'live' | 'upcoming' | 'finished' = 'upcoming'
-        let minute = ''
-        if (isLive) {
-          status = 'live'
-          const currentMinute = Math.min(Math.floor(diffMs / (1000 * 60)), 90)
-          minute = `${currentMinute}'`
-        } else if (diffHours >= 2) {
-          status = 'finished'
-        }
+      // Calculate match start and end time (each match lasts 1 hour: from scheduled time to scheduled time + 60 mins)
+      const liveMatches = calendar.filter((m) => {
+        if (m.status === 'finished') return false
+        const startTime = parseMatchDateTime(m.date, m.time)
+        const endTime = new Date(startTime.getTime() + 60 * 60 * 1000)
+        return now >= startTime && now < endTime
+      })
 
-        return {
+      let selectedMatches: any[] = []
+
+      if (liveMatches.length > 0) {
+        // Show active live match(es) in real-time
+        selectedMatches = liveMatches.map((m) => {
+          const startTime = parseMatchDateTime(m.date, m.time)
+          const diffMs = now.getTime() - startTime.getTime()
+          const currentMinute = Math.min(Math.floor(diffMs / (1000 * 60)), 50)
+          return {
+            id: m.id,
+            home: m.home,
+            away: m.away,
+            status: 'live',
+            minute: `${currentMinute}'`,
+            date: m.date,
+            time: m.time,
+            homeScore: m.homeScore ?? 0,
+            awayScore: m.awayScore ?? 0,
+            viewers: `${Math.floor(Math.random() * 300) + 250}`
+          }
+        })
+      } else {
+        // If no match is currently live, find the very next upcoming match scheduled in the calendar
+        const upcomingMatches = calendar.filter((m) => {
+          if (m.status === 'finished') return false
+          const startTime = parseMatchDateTime(m.date, m.time)
+          return startTime.getTime() > now.getTime()
+        })
+
+        const matchesToShow = upcomingMatches.length > 0 ? upcomingMatches.slice(0, 2) : calendar.slice(-2)
+
+        selectedMatches = matchesToShow.map((m) => ({
           id: m.id,
           home: m.home,
           away: m.away,
-          status,
-          minute,
+          status: 'upcoming',
+          minute: '',
           date: m.date,
           time: m.time,
-          viewers: isLive ? `${Math.floor(Math.random() * 500) + 150}` : undefined
-        }
-      })
-      setActiveMatches(firstMatches)
+          homeScore: m.homeScore,
+          awayScore: m.awayScore,
+        }))
+      }
+
+      setActiveMatches(selectedMatches)
     }
 
     updateMatches()
-    const interval = setInterval(updateMatches, 30000)
+    // Poll every 1 second to update minute counter and automatically transition when a match starts or ends
+    const interval = setInterval(updateMatches, 1000)
     return () => clearInterval(interval)
   }, [])
 

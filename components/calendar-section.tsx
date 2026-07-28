@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import { CalendarDays, Clock, MapPin } from 'lucide-react'
-import { calendar, teams } from '@/lib/data'
+import { calendar, teams, parseMatchDateTime } from '@/lib/data'
 import { TeamBadge } from '@/components/team-badge'
 import { SectionHeading } from '@/components/section-heading'
 import { cn } from '@/lib/utils'
@@ -12,7 +12,20 @@ function teamByShort(short: string) {
 }
 
 export function CalendarSection() {
-  const days = useMemo(() => Array.from(new Set(calendar.map((c) => c.date))), [])
+  const days = useMemo(() => {
+    const now = new Date()
+    const allDates = Array.from(new Set(calendar.map((c) => c.date)))
+    
+    // Filter dates where the match day has not completely passed
+    const upcomingDates = allDates.filter((dateStr) => {
+      const matchEndDate = parseMatchDateTime(dateStr, "23:59")
+      // Match day is active or in the future
+      return matchEndDate.getTime() >= now.getTime() - (24 * 60 * 60 * 1000)
+    })
+
+    return upcomingDates.length > 0 ? upcomingDates : allDates
+  }, [])
+
   const [active, setActive] = useState(days[0])
 
   const matches = calendar.filter((c) => c.date === active)
@@ -20,9 +33,9 @@ export function CalendarSection() {
   return (
     <section id="calendario" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 md:px-8 md:py-24">
       <SectionHeading
-        eyebrow="Jornada 10"
-        title="Calendario oficial"
-        description="Selecciona una fecha para ver los partidos programados."
+        eyebrow="Temporada 2026"
+        title="Calendario y Resultados"
+        description="Consulta las fechas y los marcadores oficiales de cada jornada."
       />
 
       <div className="mb-8 flex flex-wrap gap-3">
@@ -66,7 +79,13 @@ export function CalendarSection() {
                   <TeamBadge short={m.homeShort} logo={home?.logo} color={home?.color ?? '#fff'} size="sm" className="flex-shrink-0" />
                   <span className="truncate text-sm font-semibold sm:text-base">{m.home}</span>
                 </div>
-                <span className="font-display text-xs font-bold text-muted-foreground px-2">VS</span>
+                {m.status === 'finished' && m.homeScore !== undefined && m.awayScore !== undefined ? (
+                  <span className="font-display text-sm font-extrabold text-primary px-3 py-1 bg-secondary/60 rounded-xl whitespace-nowrap">
+                    {m.homeScore} – {m.awayScore}
+                  </span>
+                ) : (
+                  <span className="font-display text-xs font-bold text-muted-foreground px-2">VS</span>
+                )}
                 <div className="flex flex-1 items-center justify-end gap-4 text-right min-w-0">
                   <span className="truncate text-sm font-semibold sm:text-base">{m.away}</span>
                   <TeamBadge short={m.awayShort} logo={away?.logo} color={away?.color ?? '#fff'} size="sm" className="flex-shrink-0" />

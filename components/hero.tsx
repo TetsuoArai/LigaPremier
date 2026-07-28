@@ -1,4 +1,22 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { Play, Trophy, Users, Video } from 'lucide-react'
+
+const FOTO_GRUPAL_HERO_IMAGES = [
+  '/fotoGrupal/DSC00729.jpg',
+  '/fotoGrupal/DSC00734.jpg',
+  '/fotoGrupal/DSC01272.jpg',
+  '/fotoGrupal/DSC01283.jpg',
+  '/fotoGrupal/DSC01781.jpg',
+  '/fotoGrupal/DSC01784.jpg',
+  '/fotoGrupal/DSC02133.jpg',
+  '/fotoGrupal/DSC02139.jpg',
+  '/fotoGrupal/DSC02559.jpg',
+  '/fotoGrupal/DSC02564.jpg',
+  '/fotoGrupal/DSC02840.jpg',
+  '/fotoGrupal/DSC02845.jpg',
+]
 
 const stats = [
   { icon: Users, label: 'Equipos', value: '12' },
@@ -7,6 +25,15 @@ const stats = [
 ]
 
 export function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % FOTO_GRUPAL_HERO_IMAGES.length)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
@@ -71,23 +98,21 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="animate-float-slow overflow-hidden rounded-3xl border border-border shadow-2xl">
-            <img
-              src="/hero-futsal.png"
-              alt="Jugador de futsal disparando el balón en una cancha iluminada"
-              className="aspect-[4/5] w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-            <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-border bg-background/70 p-4 backdrop-blur-xl">
-              <div className="flex items-center gap-3">
-                <span className="flex items-center gap-1.5 rounded-full bg-destructive px-2.5 py-1 text-[10px] font-bold uppercase text-foreground">
-                  <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
-                  En Vivo
-                </span>
-                <span className="font-display text-sm font-semibold">WFC 3 – 2 LFC</span>
-              </div>
-              <span className="text-xs text-muted-foreground">34&apos;</span>
-            </div>
+          <div className="animate-float-slow relative aspect-[4/5] min-h-[480px] md:min-h-[520px] w-full overflow-hidden rounded-3xl border border-border shadow-2xl">
+            {/* Automatic FotoGrupal Slideshow with clean crossfade transitions */}
+            {FOTO_GRUPAL_HERO_IMAGES.map((imgSrc, index) => {
+              const isActive = index === currentImageIndex
+              return (
+                <img
+                  key={imgSrc}
+                  src={imgSrc}
+                  alt="Equipo de futsal Liga Premier Dominicana"
+                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+                    isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+                  }`}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
