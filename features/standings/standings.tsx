@@ -1,6 +1,6 @@
 import { teams } from '@/lib/data'
-import { TeamBadge } from '@/components/team-badge'
-import { SectionHeading } from '@/components/section-heading'
+import { TeamBadge } from '@/features/teams/team-badge'
+import { SectionHeading } from '@/shared/ui/section-heading'
 import { cn } from '@/lib/utils'
 
 export function Standings() {
@@ -34,7 +34,7 @@ export function Standings() {
                 <span
                   className={cn(
                     'flex h-8 w-8 items-center justify-center rounded-xl font-display text-sm font-extrabold',
-                    pos <= 2 ? 'bg-primary/20 text-primary border border-primary/30' : 'text-muted-foreground',
+                    pos <= 4 ? 'bg-primary/20 text-primary border border-primary/30' : 'text-muted-foreground',
                   )}
                 >
                   {pos}
@@ -87,7 +87,7 @@ export function Standings() {
 
       <div className="mt-4 flex flex-wrap gap-4 text-xs text-muted-foreground">
         <span className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded bg-primary" /> Zona de clasificación (Primeros 2)
+          <span className="h-2.5 w-2.5 rounded bg-primary" /> Zona de clasificación (Primeros 4)
         </span>
       </div>
     </section>

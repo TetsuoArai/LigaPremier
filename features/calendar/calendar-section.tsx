@@ -3,8 +3,8 @@
 import { useMemo, useState } from 'react'
 import { CalendarDays, Clock, MapPin } from 'lucide-react'
 import { calendar, teams, parseMatchDateTime } from '@/lib/data'
-import { TeamBadge } from '@/components/team-badge'
-import { SectionHeading } from '@/components/section-heading'
+import { TeamBadge } from '@/features/teams/team-badge'
+import { SectionHeading } from '@/shared/ui/section-heading'
 import { cn } from '@/lib/utils'
 
 function teamByShort(short: string) {

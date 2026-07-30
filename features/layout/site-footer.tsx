@@ -1,5 +1,5 @@
 import { Radio } from 'lucide-react'
-import { InstagramIcon, KickIcon } from '@/components/social-icons'
+import { InstagramIcon, KickIcon } from '@/shared/ui/social-icons'
 
 export function SiteFooter() {
   const socialLinks = [

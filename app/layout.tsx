@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   description:
     'La máxima expresión del futsal competitivo en República Dominicana. Goles, transmisiones en vivo, tabla de posiciones, equipos y calendario oficial.',
   generator: 'v0.app',
+  icons: {
+    icon: '/LigaPremierFutsalDominicana.png',
+    shortcut: '/LigaPremierFutsalDominicana.png',
+    apple: '/LigaPremierFutsalDominicana.png',
+  },
 }
 
 export const viewport: Viewport = {

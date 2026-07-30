@@ -2,8 +2,8 @@
 
 import { Play, Eye } from 'lucide-react'
 import { getActiveLiveMatches, teams, calendar, parseMatchDateTime } from '@/lib/data'
-import { TeamBadge } from '@/components/team-badge'
-import { SectionHeading } from '@/components/section-heading'
+import { TeamBadge } from '@/features/teams/team-badge'
+import { SectionHeading } from '@/shared/ui/section-heading'
 import { useEffect, useState } from 'react'
 
 function findTeam(name: string) {
@@ -73,8 +73,8 @@ export function LiveMatches() {
     }
 
     updateMatches()
-    // Poll every 1 second to update minute counter and automatically transition when a match starts or ends
-    const interval = setInterval(updateMatches, 1000)
+    // Poll every 10 seconds to update minute counter efficiently without overloading main thread
+    const interval = setInterval(updateMatches, 10000)
     return () => clearInterval(interval)
   }, [])
 

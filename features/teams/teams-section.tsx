@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import { X, Users, Shield, Award, Shirt } from 'lucide-react'
 import { teams, type Team, type Player } from '@/lib/data'
-import { TeamBadge } from '@/components/team-badge'
-import { SectionHeading } from '@/components/section-heading'
+import { TeamBadge } from '@/features/teams/team-badge'
+import { SectionHeading } from '@/shared/ui/section-heading'
 
 const POSITION_ORDER: Player['position'][] = ['Portero', 'Cierre', 'Ala', 'Pívot', '']
 

@@ -1,5 +1,5 @@
 import { teams } from '@/lib/data'
-import { TeamBadge } from '@/components/team-badge'
+import { TeamBadge } from '@/features/teams/team-badge'
 
 export function GoalTicker() {
   const items = [...teams, ...teams]
