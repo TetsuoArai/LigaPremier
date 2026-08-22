@@ -92,5 +92,4 @@ export function Standings() {
       </div>
     </section>
   )
-}
-
+}         
