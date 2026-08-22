@@ -77,11 +77,13 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#en-vivo"
+              href="https://youtube.com/@ligapfd?si=ErDco62HAuMBql7c"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
             >
               <Play className="h-4 w-4 fill-current" />
-              Ver transmisión
+              Ver transmision
             </a>
             <a
               href="#tabla"
@@ -112,9 +114,8 @@ export function Hero() {
                   key={imgSrc}
                   src={imgSrc}
                   alt="Equipo de futsal Liga Premier Dominicana"
-                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
-                    isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-                  }`}
+                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+                    }`}
                 />
               )
             })}

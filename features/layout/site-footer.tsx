@@ -1,10 +1,10 @@
 import { Radio } from 'lucide-react'
-import { InstagramIcon, KickIcon } from '@/shared/ui/social-icons'
+import { InstagramIcon, YoutubeIcon } from '@/shared/ui/social-icons'
 
 export function SiteFooter() {
   const socialLinks = [
-    { Icon: InstagramIcon, href: "https://www.instagram.com/lpfdom?igsh=MWlvdmhlOGtydHkycA==" },
-    { Icon: KickIcon, href: "https://kick.com/ligapfd" }
+    { Icon: InstagramIcon, href: "https://www.instagram.com/lpfdom?igsh=MWlvdmhlOGtydHkycA==", label: "Instagram" },
+    { Icon: YoutubeIcon, href: "https://youtube.com/@ligapfd?si=ErDco62HAuMBql7c", label: "YouTube" }
   ]
 
   return (
@@ -22,14 +22,14 @@ export function SiteFooter() {
               </span>
             </div>
             <div className="mt-5 flex gap-3">
-              {socialLinks.map(({ Icon, href }, i) => (
+              {socialLinks.map(({ Icon, href, label }, i) => (
                 <a
                   key={i}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-                  aria-label="Red social"
+                  aria-label={label}
                 >
                   <Icon className="h-4 w-4" />
                 </a>

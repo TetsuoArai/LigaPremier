@@ -33,7 +33,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
         <a href="#top" className="flex items-center gap-2.5">
-          <img src="/LigaPremierFutsalDominicana.png" alt="Liga Premier Futsal Dominicana" className="h-9 w-auto transform scale-150"/>
+          <img src="/LigaPremierFutsalDominicana.png" alt="Liga Premier Futsal Dominicana" className="h-9 w-auto transform scale-150" />
           <span className="font-display text-sm font-bold leading-none tracking-tight">
             LIGA PREMIER
             <span className="block text-[10px] font-medium tracking-[0.25em] text-muted-foreground">
@@ -56,12 +56,14 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#en-vivo"
-            className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 sm:inline-flex"
+            href="https://youtube.com/@ligapfd?si=ErDco62HAuMBql7c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-2 rounded-full bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 text-sm font-bold transition-transform hover:scale-105 sm:inline-flex shadow-md shadow-red-600/25"
           >
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-foreground/60" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-foreground" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
             </span>
             Ver en vivo
           </a>
