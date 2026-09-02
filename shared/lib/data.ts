@@ -32,12 +32,12 @@ export const teams: Team[] = [
     color: "#ff3fa4",
     group: "A",
     logo: "/logos/WarriorsFC.png",
-    played: 3,
+    played: 5,
     won: 2,
     drawn: 1,
-    lost: 0,
-    gf: 14,
-    ga: 10,
+    lost: 2,
+    gf: 19,
+    ga: 24,
     points: 7,
     coach: "Oscar Almonte",
     players: [
@@ -71,13 +71,13 @@ export const teams: Team[] = [
     color: "#22e07a",
     group: "A",
     logo: "/logos/LightningFC.png",
-    played: 3,
-    won: 1,
+    played: 5,
+    won: 2,
     drawn: 0,
-    lost: 2,
-    gf: 11,
-    ga: 9,
-    points: 3,
+    lost: 3,
+    gf: 21,
+    ga: 12,
+    points: 6,
     coach: "Pierluiggi Di Tonto",
     players: [
       { id: "l10", number: 1, name: "Orlando Jacobo", position: "" },
@@ -106,13 +106,13 @@ export const teams: Team[] = [
     color: "#3fb8ff",
     group: "A",
     logo: "/logos/Joseo.png",
-    played: 3,
-    won: 2,
+    played: 5,
+    won: 4,
     drawn: 0,
     lost: 1,
-    gf: 10,
-    ga: 5,
-    points: 6,
+    gf: 17,
+    ga: 7,
+    points: 12,
     coach: "Roger Asiático",
     players: [
       { id: "ja1", number: 1, name: "Ismael", position: "" },
@@ -142,13 +142,13 @@ export const teams: Team[] = [
     color: "#3fb8ff",
     group: "B",
     logo: "/logos/Joseo.png",
-    played: 3,
-    won: 2,
+    played: 5,
+    won: 4,
     drawn: 0,
     lost: 1,
-    gf: 9,
-    ga: 7,
-    points: 6,
+    gf: 23,
+    ga: 10,
+    points: 12,
     coach: "Roger Asiático",
     players: [
       { id: "jb1", number: 1, name: "Jabes", position: "" },
@@ -178,13 +178,13 @@ export const teams: Team[] = [
     color: "#a58cff",
     group: "A",
     logo: "/logos/SpaceFC.png",
-    played: 3,
-    won: 2,
+    played: 5,
+    won: 4,
     drawn: 0,
     lost: 1,
-    gf: 13,
-    ga: 10,
-    points: 6,
+    gf: 22,
+    ga: 15,
+    points: 12,
     coach: "Enrique Cascante",
     players: [
       { id: "s1", number: 1, name: "Gabriel Martínez", position: "" },
@@ -215,12 +215,12 @@ export const teams: Team[] = [
     color: "#ffcf3f",
     group: "B",
     logo: "/logos/AlphaFC.png",
-    played: 3,
+    played: 5,
     won: 0,
     drawn: 1,
-    lost: 2,
-    gf: 8,
-    ga: 13,
+    lost: 4,
+    gf: 10,
+    ga: 20,
     points: 1,
     coach: "Steven De Los Santos",
     players: [
@@ -253,13 +253,13 @@ export const teams: Team[] = [
     color: "#42e8d0",
     group: "B",
     logo: "/logos/SportingFC.png",
-    played: 3,
-    won: 0,
+    played: 5,
+    won: 1,
     drawn: 2,
-    lost: 1,
-    gf: 8,
-    ga: 9,
-    points: 2,
+    lost: 2,
+    gf: 15,
+    ga: 18,
+    points: 5,
     coach: "Xavier Reyes",
     players: [
       { id: "sp1", number: 1, name: "Omar Hasan", position: "" },
@@ -291,13 +291,13 @@ export const teams: Team[] = [
     color: "#ff5b5b",
     group: "B",
     logo: "/logos/UnionFC.png",
-    played: 3,
-    won: 2,
+    played: 5,
+    won: 3,
     drawn: 0,
-    lost: 1,
-    gf: 14,
-    ga: 14,
-    points: 6,
+    lost: 2,
+    gf: 22,
+    ga: 22,
+    points: 9,
     coach: "Juan Machado",
     players: [
       { id: "u1", number: 1, name: "Juan Zambrano", position: "" },
@@ -308,7 +308,7 @@ export const teams: Team[] = [
       { id: "u6", number: 6, name: "Julio César Gavarrete", position: "" },
       { id: "u7", number: 7, name: "Victor Gaspar", position: "" },
       { id: "u8", number: 8, name: "Eliot De León", position: "" },
-      { id: 'u9', number: 9, name: "Mauro Saldarriaga", position: ""},
+      { id: "u9", number: 9, name: "Mauro Saldarriaga", position: "" },
       { id: "u10", number: 9, name: "Anderson Kun", position: "" },
       { id: "u11", number: 10, name: "Alexis Padilla", position: "" },
       { id: "u12", number: 11, name: "Flobert Eugene", position: "" },
@@ -325,13 +325,13 @@ export const teams: Team[] = [
     color: "#8fdc4a",
     group: "B",
     logo: "/logos/ValpaFC.png",
-    played: 3,
-    won: 0,
+    played: 5,
+    won: 1,
     drawn: 1,
-    lost: 2,
-    gf: 6,
-    ga: 11,
-    points: 1,
+    lost: 3,
+    gf: 12,
+    ga: 17,
+    points: 4,
     coach: "Wandy Pierrez",
     players: [
       { id: "v1", number: 5, name: "Melvin Vallejo", position: "" },
@@ -358,13 +358,13 @@ export const teams: Team[] = [
     color: "#ff8a3f",
     group: "A",
     logo: "/logos/BuhoFC.png",
-    played: 3,
-    won: 1,
+    played: 5,
+    won: 2,
     drawn: 0,
-    lost: 2,
-    gf: 6,
-    ga: 17,
-    points: 3,
+    lost: 3,
+    gf: 20,
+    ga: 27,
+    points: 6,
     coach: "Pedro Dipp / Mera Darling / José Flores",
     players: [
       { id: "b1", number: 1, name: "Julio A Mejía Quezada", position: "" },
@@ -395,14 +395,14 @@ export const teams: Team[] = [
     short: "MFC",
     color: "#ff3fa4",
     group: "B",
-    logo: "/logos/AtaraxiaFC.png", // Using AtaraxiaFC.png or generic as logo
-    played: 3,
-    won: 3,
+    logo: "/logos/AtaraxiaFC.png",
+    played: 5,
+    won: 4,
     drawn: 0,
-    lost: 0,
-    gf: 19,
-    ga: 10,
-    points: 9,
+    lost: 1,
+    gf: 27,
+    ga: 22,
+    points: 12,
     coach: "",
     players: [
       { id: "m1", number: 20, name: "Anthony Lixandro M.", position: "" },
@@ -428,12 +428,12 @@ export const teams: Team[] = [
     color: "#e2e8f0",
     group: "A",
     logo: "/logos/PeliculaFC.png",
-    played: 3,
+    played: 5,
     won: 0,
     drawn: 1,
-    lost: 2,
-    gf: 8,
-    ga: 11,
+    lost: 4,
+    gf: 9,
+    ga: 23,
     points: 1,
     coach: "",
     players: [
@@ -454,7 +454,6 @@ export const teams: Team[] = [
       { id: "p15", number: 15, name: "Carlos monta", position: "" },
     ],
   },
-
 ];
 
 export type Scorer = {
@@ -466,74 +465,96 @@ export type Scorer = {
 };
 
 export const topScorers: Scorer[] = [
-  { rank: 1, player: "Johnnie Pérez", team: "Mallixia FC", goals: 5, assists: 0 },
-  { rank: 2, player: "Ramon Capellán", team: "Alpha FC", goals: 5, assists: 0 },
-  { rank: 3, player: "Juan Zambrano", team: "Unión CF", goals: 5, assists: 0 },
-  { rank: 4, player: "Orlando Jacobo", team: "Lightning FC", goals: 4, assists: 0 },
-  { rank: 5, player: "Anderson Ferrara", team: "Warriors FC", goals: 4, assists: 0 },
-  { rank: 6, player: "Dinio Charles", team: "Mallixia FC", goals: 4, assists: 0 },
-  { rank: 7, player: "Dumas Frontal", team: "Valpa FC", goals: 4, assists: 0 },
-  { rank: 8, player: "José Mequita", team: "Warriors FC", goals: 3, assists: 0 },
-  { rank: 9, player: "Gonzalo Aponte", team: "Space FC", goals: 3, assists: 0 },
-  { rank: 10, player: "José Antonio Del Riego", team: "Mallixia FC", goals: 3, assists: 0 },
-  { rank: 11, player: "Douglas Rojas", team: "Lightning FC", goals: 3, assists: 0 },
-  { rank: 12, player: "Junior Manasse", team: "Mallixia FC", goals: 3, assists: 0 },
-  { rank: 13, player: "Josué Lorenzo", team: "Unión CF", goals: 3, assists: 0 },
-  { rank: 14, player: "Samuel Pirela", team: "Warriors FC", goals: 2, assists: 0 },
-  { rank: 15, player: "Andrés Castellanos", team: "Unión CF", goals: 2, assists: 0 },
-  { rank: 16, player: "Cristian Bacca", team: "Warriors FC", goals: 2, assists: 0 },
-  { rank: 17, player: "Julio Jolon", team: "Joseo FC A", goals: 2, assists: 0 },
-  { rank: 18, player: "Leonardo Eve", team: "Sporting Claret SD", goals: 2, assists: 0 },
-  { rank: 19, player: "Jean Lazala", team: "Sporting Claret SD", goals: 2, assists: 0 },
-  { rank: 20, player: "Ángel Payano", team: "Alpha FC", goals: 2, assists: 0 },
-  { rank: 21, player: "Oscar Avelino", team: "Joseo FC B", goals: 2, assists: 0 },
-  { rank: 22, player: "Luis Ricardo", team: "Búho FC", goals: 2, assists: 0 },
-  { rank: 23, player: "Julián Cabreja", team: "Búho FC", goals: 2, assists: 0 },
-  { rank: 24, player: "Zironi", team: "Joseo FC B", goals: 2, assists: 0 },
-  { rank: 25, player: "Nicolás Cuadra", team: "Joseo FC B", goals: 2, assists: 0 },
-  { rank: 26, player: "Darling Jumbo", team: "Joseo FC B", goals: 2, assists: 0 },
-  { rank: 27, player: "Luis Caminero", team: "Space FC", goals: 2, assists: 0 },
-  { rank: 28, player: "Jeffry Pierre", team: "Space FC", goals: 2, assists: 0 },
-  { rank: 29, player: "Omar Hassan", team: "Sporting Claret SD", goals: 2, assists: 0 },
-  { rank: 30, player: "Gossin Paulny", team: "Mallixia FC", goals: 1, assists: 0 },
-  { rank: 31, player: "Gabriel Torres", team: "Mallixia FC", goals: 1, assists: 0 },
-  { rank: 32, player: "Jenaro Montes", team: "Mallixia FC", goals: 1, assists: 0 },
-  { rank: 33, player: "Guillermo Sousa", team: "Mallixia FC", goals: 1, assists: 0 },
-  { rank: 34, player: "Martín Lopez", team: "Unión CF", goals: 1, assists: 0 },
-  { rank: 35, player: "Alexis Padilla", team: "Unión CF", goals: 1, assists: 0 },
-  { rank: 36, player: "Sayner Rivas", team: "Unión CF", goals: 1, assists: 0 },
-  { rank: 37, player: "Daniel Pérez", team: "Unión CF", goals: 1, assists: 0 },
-  { rank: 38, player: "Daniel Rodríguez", team: "Lightning FC", goals: 1, assists: 0 },
-  { rank: 39, player: "Victor Rodríguez", team: "Lightning FC", goals: 1, assists: 0 },
-  { rank: 40, player: "Tetsuo Arai", team: "Lightning FC", goals: 1, assists: 0 },
-  { rank: 41, player: "Brian Hernández (Valencia)", team: "Lightning FC", goals: 1, assists: 0 },
-  { rank: 42, player: "Francois Peterson", team: "Joseo FC B", goals: 1, assists: 0 },
-  { rank: 43, player: "Andy Bayo", team: "Valpa FC", goals: 1, assists: 0 },
-  { rank: 44, player: "Kervin Jeanlouis", team: "Valpa FC", goals: 1, assists: 0 },
-  { rank: 45, player: "Decius Denis", team: "Warriors FC", goals: 1, assists: 0 },
-  { rank: 46, player: "Arnaldo Granda", team: "Warriors FC", goals: 1, assists: 0 },
-  { rank: 47, player: "Iván Prado", team: "Warriors FC", goals: 1, assists: 0 },
-  { rank: 48, player: "Jonathan Gonzales", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 49, player: "Alvin Rivera", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 50, player: "Gabriel Martínez", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 51, player: "Gabriel Brugal", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 52, player: "Jesús Morillo", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 53, player: "Óscar Guillen", team: "Space FC", goals: 1, assists: 0 },
-  { rank: 54, player: "José Rodríguez", team: "Sporting Claret SD", goals: 1, assists: 0 },
-  { rank: 55, player: "Edwin Abelard", team: "Sporting Claret SD", goals: 1, assists: 0 },
-  { rank: 56, player: "Josué Cabrera", team: "Alpha FC", goals: 1, assists: 0 },
-  { rank: 57, player: "Enmanuel De la Cruz", team: "Alpha FC", goals: 1, assists: 0 },
-  { rank: 58, player: "Juan Martínez (Chichi)", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 59, player: "Pitri", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 60, player: "Josué Payano", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 61, player: "Lebron", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 62, player: "Kendry", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 63, player: "Doraemon", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 64, player: "Darien Sanders", team: "Joseo FC A", goals: 1, assists: 0 },
-  { rank: 65, player: "Eduardo Furment", team: "Búho FC", goals: 1, assists: 0 },
-  { rank: 66, player: "Dalton Hernández", team: "Búho FC", goals: 1, assists: 0 },
-  { rank: 67, player: "Sebastián Aubi", team: "Pelicula FC", goals: 1, assists: 0 },
-  { rank: 68, player: "Steven Cruz", team: "Pelicula FC", goals: 1, assists: 0 },
+  { rank: 1, player: "Dumas Frontal", team: "Valpa FC", goals: 10, assists: 0 },
+  { rank: 2, player: "José Antonio Del Riego", team: "Mallixia FC", goals: 6, assists: 0 },
+  { rank: 3, player: "Johnnie Pérez", team: "Mallixia FC", goals: 5, assists: 0 },
+  { rank: 4, player: "Ramon Capellán", team: "Alpha FC", goals: 5, assists: 0 },
+  { rank: 5, player: "Juan Zambrano", team: "Unión CF", goals: 5, assists: 0 },
+  { rank: 6, player: "Orlando Jacobo", team: "Lightning FC", goals: 5, assists: 0 },
+  { rank: 7, player: "Dinio Charles", team: "Mallixia FC", goals: 5, assists: 0 },
+  { rank: 8, player: "Anderson Ferrara", team: "Warriors FC", goals: 4, assists: 0 },
+  { rank: 9, player: "Douglas Rojas", team: "Lightning FC", goals: 4, assists: 0 },
+  { rank: 10, player: "Gonzalo Aponte", team: "Space FC", goals: 4, assists: 0 },
+  { rank: 11, player: "Jeffry Pierre", team: "Space FC", goals: 4, assists: 0 },
+  { rank: 12, player: "Julio Jolon", team: "Joseo FC A", goals: 4, assists: 0 },
+  { rank: 13, player: "Omar Hasan", team: "Sporting Claret SD", goals: 4, assists: 0 },
+  { rank: 14, player: "Junior Manasse", team: "Mallixia FC", goals: 4, assists: 0 },
+  { rank: 15, player: "Daniel Pérez", team: "Unión CF", goals: 4, assists: 0 },
+  { rank: 16, player: "Decius Denis", team: "Warriors FC", goals: 4, assists: 0 },
+  { rank: 17, player: "Ronny Almonte", team: "Búho FC", goals: 4, assists: 0 },
+  { rank: 18, player: "Augustin Jackendo", team: "Búho FC", goals: 4, assists: 0 },
+  { rank: 19, player: "Divo Silvestri", team: "Lightning FC", goals: 4, assists: 0 },
+  { rank: 20, player: "Jose Ramirez", team: "Joseo FC B", goals: 4, assists: 0 },
+  { rank: 21, player: "José Mequita", team: "Warriors FC", goals: 3, assists: 0 },
+  { rank: 22, player: "Josué Lorenzo", team: "Unión CF", goals: 3, assists: 0 },
+  { rank: 23, player: "Samuel Pirela", team: "Warriors FC", goals: 3, assists: 0 },
+  { rank: 24, player: "Andrés Castellanos", team: "Unión CF", goals: 3, assists: 0 },
+  { rank: 25, player: "Jean Lazala", team: "Sporting Claret SD", goals: 3, assists: 0 },
+  { rank: 26, player: "Luis Ricardo", team: "Búho FC", goals: 3, assists: 0 },
+  { rank: 27, player: "Julián Cabreja", team: "Búho FC", goals: 3, assists: 0 },
+  { rank: 28, player: "Pablo Zironi", team: "Joseo FC B", goals: 3, assists: 0 },
+  { rank: 29, player: "Nicolás Cuadra", team: "Joseo FC B", goals: 3, assists: 0 },
+  { rank: 30, player: "Luis Caminero", team: "Space FC", goals: 3, assists: 0 },
+  { rank: 31, player: "Daniel Rodríguez", team: "Lightning FC", goals: 3, assists: 0 },
+  { rank: 32, player: "Tetsuo Arai", team: "Lightning FC", goals: 3, assists: 0 },
+  { rank: 33, player: "Martín Lopez", team: "Unión CF", goals: 3, assists: 0 },
+  { rank: 34, player: "Juan Martínez (Chichi)", team: "Joseo FC A", goals: 3, assists: 0 },
+  { rank: 35, player: "Cristian Bacca", team: "Warriors FC", goals: 2, assists: 0 },
+  { rank: 36, player: "Leonardo Eve", team: "Sporting Claret SD", goals: 2, assists: 0 },
+  { rank: 37, player: "Ángel Payano", team: "Alpha FC", goals: 2, assists: 0 },
+  { rank: 38, player: "Oscar Avelino", team: "Joseo FC B", goals: 2, assists: 0 },
+  { rank: 39, player: "Darling Jumbo", team: "Joseo FC B", goals: 2, assists: 0 },
+  { rank: 40, player: "Jenaro Montes", team: "Mallixia FC", goals: 2, assists: 0 },
+  { rank: 41, player: "Guillermo Sousa", team: "Mallixia FC", goals: 2, assists: 0 },
+  { rank: 42, player: "Gabriel Martínez", team: "Space FC", goals: 2, assists: 0 },
+  { rank: 43, player: "Gabriel Brugal", team: "Space FC", goals: 2, assists: 0 },
+  { rank: 44, player: "Josué Payano", team: "Joseo FC A", goals: 2, assists: 0 },
+  { rank: 45, player: "Kendry", team: "Joseo FC A", goals: 2, assists: 0 },
+  { rank: 46, player: "Alexander Domínguez", team: "Joseo FC B", goals: 2, assists: 0 },
+  { rank: 47, player: "Kelvis Grullon", team: "Alpha FC", goals: 2, assists: 0 },
+  { rank: 48, player: "Anderson Kun", team: "Unión CF", goals: 2, assists: 0 },
+  { rank: 49, player: "Gossin Paulny", team: "Mallixia FC", goals: 1, assists: 0 },
+  { rank: 50, player: "Gabriel Torres", team: "Mallixia FC", goals: 1, assists: 0 },
+  { rank: 51, player: "Alexis Padilla", team: "Unión CF", goals: 1, assists: 0 },
+  { rank: 52, player: "Sayner Rivas", team: "Unión CF", goals: 1, assists: 0 },
+  { rank: 53, player: "Victor Rodríguez", team: "Lightning FC", goals: 1, assists: 0 },
+  { rank: 54, player: "Brian Hernández (Valencia)", team: "Lightning FC", goals: 1, assists: 0 },
+  { rank: 55, player: "Francois Peterson", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 56, player: "Andy Bayo", team: "Valpa FC", goals: 1, assists: 0 },
+  { rank: 57, player: "Kervin Jeanlouis", team: "Valpa FC", goals: 1, assists: 0 },
+  { rank: 58, player: "Arnaldo Granda", team: "Warriors FC", goals: 1, assists: 0 },
+  { rank: 59, player: "Iván Prado", team: "Warriors FC", goals: 1, assists: 0 },
+  { rank: 60, player: "Jonathan Gonzales", team: "Space FC", goals: 1, assists: 0 },
+  { rank: 61, player: "Alvin Rivera", team: "Space FC", goals: 1, assists: 0 },
+  { rank: 62, player: "Jesús Morillo", team: "Space FC", goals: 1, assists: 0 },
+  { rank: 63, player: "Óscar Guillen", team: "Space FC", goals: 1, assists: 0 },
+  { rank: 64, player: "José Rodríguez", team: "Sporting Claret SD", goals: 1, assists: 0 },
+  { rank: 65, player: "Edwin Abelard", team: "Sporting Claret SD", goals: 1, assists: 0 },
+  { rank: 66, player: "Josué Cabrera", team: "Alpha FC", goals: 1, assists: 0 },
+  { rank: 67, player: "Enmanuel De la Cruz", team: "Alpha FC", goals: 1, assists: 0 },
+  { rank: 68, player: "Pitri", team: "Joseo FC A", goals: 1, assists: 0 },
+  { rank: 69, player: "Lebron", team: "Joseo FC A", goals: 1, assists: 0 },
+  { rank: 70, player: "Doraemon", team: "Joseo FC A", goals: 1, assists: 0 },
+  { rank: 71, player: "Darien Sanders", team: "Joseo FC A", goals: 1, assists: 0 },
+  { rank: 72, player: "Eduardo Furment", team: "Búho FC", goals: 1, assists: 0 },
+  { rank: 73, player: "Dalton Hernández", team: "Búho FC", goals: 1, assists: 0 },
+  { rank: 74, player: "Sebastián Aubi", team: "Pelicula FC", goals: 1, assists: 0 },
+  { rank: 75, player: "Steven Cruz", team: "Pelicula FC", goals: 1, assists: 0 },
+  { rank: 76, player: "José Valenzuela", team: "Pelicula FC", goals: 1, assists: 0 },
+  { rank: 77, player: "Ángel Medina", team: "Búho FC", goals: 1, assists: 0 },
+  { rank: 78, player: "Jhon Reynoso", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 79, player: "Jhon López", team: "Sporting Claret SD", goals: 1, assists: 0 },
+  { rank: 80, player: "Diego Beras", team: "Sporting Claret SD", goals: 1, assists: 0 },
+  { rank: 81, player: "Yves Vil", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 82, player: "Alan Montero", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 83, player: "Carlos Liriano", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 84, player: "José Pérez", team: "Joseo FC B", goals: 1, assists: 0 },
+  { rank: 85, player: "Ricardo Portal", team: "Sporting Claret SD", goals: 1, assists: 0 },
+  { rank: 86, player: "Eduardo Viloria", team: "Mallixia FC", goals: 1, assists: 0 },
+  { rank: 87, player: "Evan Saldaña", team: "Joseo FC A", goals: 1, assists: 0 },
+  { rank: 88, player: "Julio Mejía", team: "Búho FC", goals: 1, assists: 0 },
+  { rank: 89, player: "Justin Uceta", team: "Búho FC", goals: 1, assists: 0 },
+  { rank: 90, player: "Cristian Omaña", team: "Warriors FC", goals: 1, assists: 0 },
 ];
 
 export type Match = {
@@ -549,15 +570,13 @@ export type Match = {
   viewers?: string;
 };
 
-// Helper to parse date/time from calendar formats (e.g. "25 JUL", "17:00") into a JS Date object
 export function parseMatchDateTime(dateStr: string, timeStr: string): Date {
   const currentYear = new Date().getFullYear();
-  // Example dateStr: "25 JUL" or "2 AGO"
   const parts = dateStr.trim().split(" ");
   const day = parseInt(parts[0], 10);
   const monthStr = parts[1]?.toUpperCase() ?? "";
 
-  let month = 0; // JAN is 0
+  let month = 0;
   if (monthStr.startsWith("ENE")) month = 0;
   else if (monthStr.startsWith("FEB")) month = 1;
   else if (monthStr.startsWith("MAR")) month = 2;
@@ -571,13 +590,11 @@ export function parseMatchDateTime(dateStr: string, timeStr: string): Date {
   else if (monthStr.startsWith("NOV")) month = 10;
   else if (monthStr.startsWith("DIC")) month = 11;
 
-  // Example timeStr: "17:00" or "5:00 PM"
   let hours = 0;
   let minutes = 0;
   const isPM = timeStr.toUpperCase().includes("PM");
   const isAM = timeStr.toUpperCase().includes("AM");
 
-  // Strip PM/AM and split
   const cleanTime = timeStr.replace(/(PM|AM)/gi, "").trim();
   const timeParts = cleanTime.split(":");
   hours = parseInt(timeParts[0], 10);
@@ -592,13 +609,12 @@ export function parseMatchDateTime(dateStr: string, timeStr: string): Date {
 export function getActiveLiveMatches(): Match[] {
   const now = new Date();
 
-  // Find matches that started less than 2 hours ago
   return calendar
     .filter(m => {
       const matchTime = parseMatchDateTime(m.date, m.time);
       const diffMs = now.getTime() - matchTime.getTime();
       const diffHours = diffMs / (1000 * 60 * 60);
-      return diffHours >= 0 && diffHours < 2; // Active for 2 hours
+      return diffHours >= 0 && diffHours < 2;
     })
     .map(m => {
       const matchTime = parseMatchDateTime(m.date, m.time);
@@ -619,7 +635,6 @@ export function getActiveLiveMatches(): Match[] {
       };
     });
 }
-
 
 export type CalendarMatch = {
   id: string;
@@ -663,22 +678,21 @@ export const calendar: CalendarMatch[] = [
   { id: 'c18', home: 'Warriors RD FC', homeShort: 'WFC', away: 'Lightning FC', awayShort: 'LFC', day: 'SÁB', date: '15 AGO', time: '22:00', round: 'Jornada 3', group: 'A', homeScore: 3, awayScore: 0, status: 'finished' },
 
   // ── Jornada 4 · Sábado 22 Ago 2026 ──────────────────────────────
-  { id: 'c19', home: 'Space FC', homeShort: 'SFC', away: 'Búho FC', awayShort: 'BFC', day: 'SÁB', date: '22 AGO', time: '17:00', round: 'Jornada 4', group: 'A' },
-  { id: 'c20', home: 'Alpha FC', homeShort: 'AFC', away: 'Valpa FC', awayShort: 'VFC', day: 'SÁB', date: '22 AGO', time: '18:00', round: 'Jornada 4', group: 'B' },
-  { id: 'c21', home: 'Lightning FC', homeShort: 'LFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '22 AGO', time: '19:00', round: 'Jornada 4', group: 'A' },
-  { id: 'c22', home: 'Joseo FC A', homeShort: 'JOSA', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '22 AGO', time: '20:00', round: 'Jornada 4', group: 'A' },
-  { id: 'c23', home: 'Mallixia FC', homeShort: 'MFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '22 AGO', time: '21:00', round: 'Jornada 4', group: 'B' },
-  { id: 'c24', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '22 AGO', time: '22:00', round: 'Jornada 4', group: 'B' },
+  { id: 'c19', home: 'Space FC', homeShort: 'SFC', away: 'Búho FC', awayShort: 'BFC', day: 'SÁB', date: '22 AGO', time: '17:00', round: 'Jornada 4', group: 'A', homeScore: 6, awayScore: 5, status: 'finished' },
+  { id: 'c20', home: 'Alpha FC', homeShort: 'AFC', away: 'Valpa FC', awayShort: 'VFC', day: 'SÁB', date: '22 AGO', time: '18:00', round: 'Jornada 4', group: 'B', homeScore: 1, awayScore: 2, status: 'finished' },
+  { id: 'c21', home: 'Lightning FC', homeShort: 'LFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '22 AGO', time: '19:00', round: 'Jornada 4', group: 'A', homeScore: 9, awayScore: 1, status: 'finished' },
+  { id: 'c22', home: 'Joseo FC A', homeShort: 'JOSA', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '22 AGO', time: '20:00', round: 'Jornada 4', group: 'A', homeScore: 5, awayScore: 1, status: 'finished' },
+  { id: 'c23', home: 'Mallixia FC', homeShort: 'MFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '22 AGO', time: '21:00', round: 'Jornada 4', group: 'B', homeScore: 2, awayScore: 9, status: 'finished' },
+  { id: 'c24', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '22 AGO', time: '22:00', round: 'Jornada 4', group: 'B', homeScore: 4, awayScore: 3, status: 'finished' },
 
   // ── Jornada 5 · Sábado 29 Ago 2026 ──────────────────────────────
-  { id: 'c25', home: 'Space FC', homeShort: 'SFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '29 AGO', time: '17:00', round: 'Jornada 5', group: 'A' },
-  { id: 'c26', home: 'Alpha FC', homeShort: 'AFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '29 AGO', time: '18:00', round: 'Jornada 5', group: 'B' },
-  { id: 'c27', home: 'Valpa FC', homeShort: 'VFC', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '29 AGO', time: '19:00', round: 'Jornada 5', group: 'B' },
-  { id: 'c28', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Mallixia FC', awayShort: 'MFC', day: 'SÁB', date: '29 AGO', time: '20:00', round: 'Jornada 5', group: 'B' },
-  { id: 'c29', home: 'Lightning FC', homeShort: 'LFC', away: 'Joseo FC A', awayShort: 'JOSA', day: 'SÁB', date: '29 AGO', time: '21:00', round: 'Jornada 5', group: 'A' },
-  { id: 'c30', home: 'Búho FC', homeShort: 'BFC', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '29 AGO', time: '22:00', round: 'Jornada 5', group: 'A' },
+  { id: 'c25', home: 'Space FC', homeShort: 'SFC', away: 'Pelicula FC', awayShort: 'PFC', day: 'SÁB', date: '29 AGO', time: '17:00', round: 'Jornada 5', group: 'A', homeScore: 3, awayScore: 0, status: 'finished' },
+  { id: 'c26', home: 'Alpha FC', homeShort: 'AFC', away: 'Joseo FC B', awayShort: 'JOSB', day: 'SÁB', date: '29 AGO', time: '18:00', round: 'Jornada 5', group: 'B', homeScore: 1, awayScore: 5, status: 'finished' },
+  { id: 'c27', home: 'Valpa FC', homeShort: 'VFC', away: 'Unión CF', awayShort: 'UFC', day: 'SÁB', date: '29 AGO', time: '19:00', round: 'Jornada 5', group: 'B', homeScore: 4, awayScore: 5, status: 'finished' },
+  { id: 'c28', home: 'Sporting Claret SD', homeShort: 'SPO', away: 'Mallixia FC', awayShort: 'MFC', day: 'SÁB', date: '29 AGO', time: '20:00', round: 'Jornada 5', group: 'B', homeScore: 3, awayScore: 6, status: 'finished' },
+  { id: 'c29', home: 'Lightning FC', homeShort: 'LFC', away: 'Joseo FC A', awayShort: 'JOSA', day: 'SÁB', date: '29 AGO', time: '21:00', round: 'Jornada 5', group: 'A', homeScore: 1, awayScore: 2, status: 'finished' },
+  { id: 'c30', home: 'Búho FC', homeShort: 'BFC', away: 'Warriors RD FC', awayShort: 'WFC', day: 'SÁB', date: '29 AGO', time: '22:00', round: 'Jornada 5', group: 'A', homeScore: 9, awayScore: 4, status: 'finished' },
 ];
-
 
 export type InstagramPost = {
   id: string;
