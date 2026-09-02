@@ -4,6 +4,7 @@ import { GoalTicker } from '@/features/scorers/goal-ticker'
 import { LiveMatches } from '@/features/matches/live-matches'
 import { GoalsSection } from '@/features/scorers/goals-section'
 import { Standings } from '@/features/standings/standings'
+import { PlayoffsSection } from '@/features/playoffs/playoffs-section'
 import { TeamsSection } from '@/features/teams/teams-section'
 import { CalendarSection } from '@/features/calendar/calendar-section'
 import { InstagramFeed } from '@/features/social/instagram-feed'
@@ -26,6 +27,7 @@ export default function Page() {
           <LiveMatches />
           <GoalsSection />
           <Standings />
+          <PlayoffsSection />
           <TeamsSection />
           <CalendarSection />
           <InstagramFeed />

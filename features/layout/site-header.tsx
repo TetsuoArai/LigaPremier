@@ -8,6 +8,7 @@ const links = [
   { label: 'En Vivo', href: '#en-vivo' },
   { label: 'Goles', href: '#goles' },
   { label: 'Tabla', href: '#tabla' },
+  { label: 'Playoffs', href: '#cuartos' },
   { label: 'Equipos', href: '#equipos' },
   { label: 'Calendario', href: '#calendario' },
   { label: 'Social', href: '#social' },
